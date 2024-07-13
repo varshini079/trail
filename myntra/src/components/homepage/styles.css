@@ -1,0 +1,53 @@
+/* styles.css */
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust minmax values as needed */
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 345px; /* Ensure all cards have the same width */
+  margin: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin: 0;
+}
+
+.card-content p {
+  margin: 10px 0 0 0;
+}
+
+.card-content .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-content .actions .button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #2196f3;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.card-content .actions .button:hover {
+  background-color: #1976d2;
+}
