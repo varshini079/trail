@@ -1,8 +1,7 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 const firebaseConfig = {
-    apiKey: "AIzaSyALSGwJmexTjSTzEu69tXXuRGqDY70jRpQ",
-    authDomain: "fir-d8934.firebaseapp.com",
+
     projectId: "fir-d8934",
     storageBucket: "fir-d8934.appspot.com",
     messagingSenderId: "379259250114",
