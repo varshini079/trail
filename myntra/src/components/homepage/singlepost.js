@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Post from './card'; // Adjust path as needed
 import './singlePost.css'; // Adjust path as needed
 
 const SinglePost = () => {
+    const navigate = useNavigate();
+
   const { id } = useParams();
   const [post, setPost] = useState(null);
   const [otherPosts, setOtherPosts] = useState([]);
@@ -20,10 +22,15 @@ const SinglePost = () => {
 
   if (!post) return <div>Loading...</div>;
 
+  const handleProfileClick = () => {
+    navigate(`/user/${post.userId}`);
+  };
+
+
   return (
     <>
     <div className="detailed-post">
-      <div className="post-header">
+      <div className="post-header" onClick={handleProfileClick}>
         <img className="profile-image" src="https://via.placeholder.com/50" alt="Profile" />
         <h2 className="profile-name">Profile Name</h2>
       </div>

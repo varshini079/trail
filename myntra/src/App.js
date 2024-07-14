@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import FetchApi from './components/homepage/fetch';
 import CardApp from './components/rewards/reward_card';
 import TopNav from './components/top_nav_bar/nav';
@@ -8,6 +8,8 @@ import CamPage from './components/cam_page/cam';
 import SideNav from './components/side_nav_bar/sidenav'
 import UserProfile from './components/top_nav_bar/userprofile';
 import SinglePost from './components/homepage/singlepost';
+import Profile from './components/profile_page/profiledata';
+import Leaderboard from './components/leaderborad/leaderboard';
 const App = () => {
   return (
     <>
@@ -42,10 +44,18 @@ const App = () => {
         } 
       />
       <Route 
-          path="/user-profile" 
-          element={<UserProfile />} 
-        />
-            <Route path="/post/:id" element={<SinglePost />} />
+        path="/leaderboard" 
+        element={
+          <div>
+            <SideNav />
+            <Leaderboard />
+          </div>
+        } 
+      />
+
+     <Route path="/user-profile" element={<UserProfile />} />
+        <Route path="/post/:id" element={<SinglePost />} />
+        <Route path="/user/:userId" element={<Profile />} />
 
     </Routes>
   </>
