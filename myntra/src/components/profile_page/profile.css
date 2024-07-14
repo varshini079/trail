@@ -1,0 +1,80 @@
+.user-profile {
+  display: flex;
+  width: 100%;
+max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-sidebar {
+  width: 20%;
+  position: fixed;
+  margin-top: 60px;
+  left: 50;
+  background-color: #f0f0f0;  
+  box-sizing: border-box;
+}
+
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  top: 100px;
+}
+
+.profile-image {
+  margin-top:10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  font-size: 24px;
+  text-align: center;
+}
+
+.profile-content {
+  margin-left: 30%; /* Aligns with the profile-sidebar width */
+  padding: 20px;
+  box-sizing: border-box;
+  width: 70%;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+.posts-list,
+.collections-list,
+.following-list,
+.followers-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-item,
+.collection-item,
+.following-item,
+.follower-item {
+  margin-bottom: 10px;
+}
+
+.post-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.post-item p,
+.collection-item p,
+.following-item p,
+.follower-item p {
+  margin: 5px 0 0;
+}
+
+.tabs-container {
+  margin-left: 200px; /* Aligns with the profile-sidebar width */
+  margin-top: 200px; /* Adjust this value to prevent overlap with fixed header */
+}

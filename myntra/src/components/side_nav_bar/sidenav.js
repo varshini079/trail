@@ -31,7 +31,7 @@ export default function SideNav() {
     <Box sx={{ width: 250 }} role="presentation">
       <List>
         {[
-          { text: 'Leader Board', path: '/' },
+          { text: 'Leader Board', path: '/leaderboard' },
           { text: 'Camera', path: '/camera' },
           { text: 'Collections', path: '/collections' },
           { text: 'Rewards', path: '/rewards' },

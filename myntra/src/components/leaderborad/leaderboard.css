@@ -1,0 +1,15 @@
+.container {
+    margin-left: 20px;
+  }
+  .section {
+    margin-bottom: 20px;
+  }
+  .heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .avatarContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  
