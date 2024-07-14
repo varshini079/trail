@@ -3,6 +3,8 @@ import React from 'react';
 import categories from './categoriesData';
 import './styles.css';
 import { Card, CardContent, Typography, CardMedia, Box } from '@mui/material';
+import { Button } from '@mui/material';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 const MyntraPage = () => {
   return (
     <div>
@@ -25,7 +27,9 @@ const MyntraPage = () => {
           <div className="card-body">
             <h5 className="card-title">{category.title}</h5>
             <p className="card-text">{category.discount}</p>
-            <a href="#" className="btn btn-primary">Shop Now</a>
+            <Link to="/shop">
+      <Button variant="contained" color="primary">Shop Now</Button>
+    </Link>
           </div>
         </div>
       ))}
