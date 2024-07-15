@@ -1,0 +1,9 @@
+
+.card img {
+    width: 100%; /* Ensure images fill their container */
+    height: 300px; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing */
+    border-top-left-radius: 8px; /* Optional: Add rounded corners */
+    border-top-right-radius: 8px; /* Optional: Add rounded corners */
+}
+

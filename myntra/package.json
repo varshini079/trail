@@ -8,7 +8,7 @@
     "@mui/icons-material": "^5.16.0",
     "@mui/joy": "^5.0.0-beta.47",
     "@mui/lab": "^5.0.0-alpha.171",
-    "@mui/material": "^5.16.0",
+    "@mui/material": "^5.16.1",
     "@rsuite/icons": "^1.0.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
