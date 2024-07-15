@@ -18,12 +18,6 @@ Welcome to the Style Buddies project! This project was created for a hackathon w
 ### Leaderboard
 - Displays top users and top curations.
 
-## Technologies Used
-
-- **React**: JavaScript library for building user interfaces.
-- **Material UI**: React components for faster and easier web development.
-- **CSS**: For styling components.
-
 ## Setup Instructions
 
 Follow these steps to set up and run the project locally:
