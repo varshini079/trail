@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Style Buddies - Myntra Hackathon Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+Welcome to the Style Buddies project! This project was created for a hackathon with the aim of providing an immersive and interactive shopping experience. Style Buddies integrates social media functionalities and user-generated content to create a unique fashion destination. Users can share their fashion styles, add products to curated lists, and view a leaderboard of top users and curations.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### Style Buddies
+- Users can post their images with links to products available on Myntra.
+- Users can add descriptions and specify their body type.
+- Users can browse posts created by other users.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Curations
+- Users can add products they like to a list of curated collections.
+- Similar to Pinterest boards or YouTube playlists.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Leaderboard
+- Displays top users and top curations.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React**: JavaScript library for building user interfaces.
+- **Material UI**: React components for faster and easier web development.
+- **CSS**: For styling components.
 
-### `npm run build`
+## Setup Instructions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Follow these steps to set up and run the project locally:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    git clone https://github.com/varshini079/trail.git
+    ```
 
-### `npm run eject`
+2. **Install dependencies:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Make sure you have [Node.js](https://nodejs.org/) installed. Then, install the necessary dependencies using npm:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Start the development server:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    npm run dev
+    ```
 
-## Learn More
+4. **Open the application:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Open your browser and navigate to `http://localhost:3000` to view the application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Home Page**: Start exploring the platform.
+- **Camera Page**: Capture or upload images to share your style.
+- **Collection Page**: View and manage your curated collections.
+- **Leaderboard**: Check the top users and curations.
+- **Profile Page**: View and edit your profile.
+- **Rewards Page**: View and redeem rewards.
+- **Side Navigation Bar**: Navigate through different sections of the app.
+- **Top Navigation Bar**: Access key actions and user settings.
 
-### Analyzing the Bundle Size
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project leverages a variety of modern web development technologies:
 
-### Making a Progressive Web App
+- **React**: A JavaScript library for building user interfaces.
+- **Material-UI**: A popular React UI framework that provides pre-styled components.
+- **React Router**: A collection of navigational components that compose declaratively with your application.
+- **JavaScript (ES6+)**: The main programming language used for the logic and interactivity.
+- **HTML5 & CSS3**: For structuring and styling the web pages.
+- **Figma**: Used for designing the UI and creating prototypes.
+- **Vite**: A fast development build tool for modern web projects.
+- **Node.js**: A JavaScript runtime used for building the server-side application.
+- **Firebase**: database for storing user data and posts.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
