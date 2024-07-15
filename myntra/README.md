@@ -78,4 +78,8 @@ This project leverages a variety of modern web development technologies:
 - **Node.js**: A JavaScript runtime used for building the server-side application.
 - **Firebase**: database for storing user data and posts.
 
+## License
+
+This project is licensed under the MIT License 
+
 
