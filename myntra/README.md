@@ -45,7 +45,7 @@ Follow these steps to set up and run the project locally:
 3. **Start the development server:**
 
     ```bash
-    npm run dev
+    npm start
     ```
 
 4. **Open the application:**
