@@ -1,0 +1,53 @@
+.top-collections-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .collection-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 20px; /* Adjust the gap between collection boxes */
+  }
+  
+  .collection-box {
+    flex: 1 1 300px; /* Flex properties to control item sizing */
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add margin-bottom to separate collection boxes */
+  }
+  
+  .collection-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .collection-details {
+    flex-grow: 1;
+  }
+  
+  .collection-details h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .ImageList-root {
+    margin-top: 20px;
+  }
+  

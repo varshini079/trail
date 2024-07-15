@@ -1,13 +1,16 @@
-.detailed-post {
+.detailed-post-container {
   margin-left: 80px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  width: 90%;
+}
+
+.detailed-post {
   display: flex;
   flex-direction: row;
-  justify-content:flex-start;
-  padding: 20px;
-  border-style:line;
-  border-width: 1px;
-  border-color: #ccc;
-
+  justify-content: flex-start;
 }
 
 .post-left {
@@ -16,30 +19,30 @@
   flex-direction: column;
   align-items: flex-start;
 }
+
 .post-header {
-  margin-left: 40px;
+  margin-left: 50px;
   margin-top: 0px;
   position: absolute;
   display: flex;
   align-items: center;
+  margin-right: 20px;
 }
 
 .profile-image {
-  width: 16px;
-  height: 16px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  margin-right: 8px;
 }
 
 .profile-name {
   font-size: 14px; /* Adjust font size as needed */
-  font-weight: bold;
-  margin: 0;
+  margin-left: 10px;
 }
 
 .post-content {
-margin-top: 50px;
-margin-left: 40px;
+  margin-top: 50px;
+  margin-left: 40px;
   display: flex;
   width: 100%;
 }
@@ -66,25 +69,27 @@ margin-left: 40px;
 }
 
 .other-posts {
-  width: 100%;
-  max-width: 800px;
+  width: 345px;
   margin-top: 20px;
+  border-radius: 15px;
+  margin-left: 50px;
 }
 
 .other-posts h2 {
   font-size: 24px;
-  margin-bottom: 10px;
-  text-align: center;
+  margin-bottom: 15px;
+  text-align: left; /* Changed from center to left */
+  margin-left: 50px; /* Added left margin */
 }
 
 .post-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Reduced gap between posts */
 }
 
 .card {
-  width: 100%;
+  width: 90%;
   border-radius: 8px;
   border: 1px solid #ccc;
   transition: box-shadow 0.3s ease;

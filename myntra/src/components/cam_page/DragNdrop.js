@@ -67,8 +67,9 @@ const DragNdrop = ({ onFilesSelected, width, height, imageWidth, imageHeight }) 
         <div className="upload-info">
           <AiOutlineCloudUpload />
           <div>
-            <p>Drag and drop your files here</p>
-            <p>Limit 15MB per file. Supported files: .PDF, .DOCX, .PPTX, .TXT, .XLSX</p>
+          <p>Drag and drop your files here</p>
+          <p>Limit 15MB per file. Supported files: .JPG, .JPEG, .PNG</p>
+
           </div>
         </div>
         <input

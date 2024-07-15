@@ -1,8 +1,5 @@
-// FormPage.js
-
 import React, { useState } from 'react';
 import { Container, TextField, MenuItem, Button, Chip, Box } from '@mui/material';
-
 
 const FormPage = () => {
   const [description, setDescription] = useState('');
@@ -11,6 +8,7 @@ const FormPage = () => {
   const [categoryInput, setCategoryInput] = useState('');
   const [urls, setUrls] = useState([]);
   const [urlInput, setUrlInput] = useState('');
+  const [review, setReview] = useState('');
   const [isUploaded, setIsUploaded] = useState(false);
 
   const bodyTypes = [
@@ -95,6 +93,17 @@ const FormPage = () => {
             <Chip key={index} label={url} sx={{ mr: 1, mb: 1 }} />
           ))}
         </Box>
+        <TextField
+          fullWidth
+          label="Review"
+          multiline
+          rows={4}
+          value={review}
+          onChange={(e) => setReview(e.target.value)}
+          helperText={`${review.length}/500`}
+          inputProps={{ maxLength: 500 }}
+          margin="normal"
+        />
         <Button onClick={handleUpload} variant="contained" color="success">
           {isUploaded ? "Uploaded!" : "Upload"}
         </Button>

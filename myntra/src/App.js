@@ -56,7 +56,7 @@ const App = () => {
      <Route path="/user-profile" element={<UserProfile />} />
         <Route path="/post/:id" element={<SinglePost />} />
         <Route path="/user/:userId" element={<Profile />} />
-
+        
     </Routes>
   </>
   );

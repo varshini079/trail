@@ -1,0 +1,47 @@
+.top-users-container {
+    max-width: 1000px;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+  }
+  
+  .top-users-title {
+    margin-bottom: 20px;
+    white-space: nowrap; /* Ensures the title stays on one line */
+    margin-top: 0px;
+    margin-left: 20px;
+    align-items: center;
+  }
+  
+  .users-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Gap between user info blocks */
+    justify-content: space-between;
+    border: 1px solid #ddd; /* Add border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    padding: 20px; /* Add padding for better spacing inside the box */
+    border-radius: 10px; /* Optional: round the corners */
+    background-color: #fff; /* Optional: set background color to white */
+  }
+  
+  .user-info {
+    flex: 0 1 calc(20% - 20px); /* 5 users per row (20% width minus gap) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 20px; /* Margin between rows */
+  }
+  
+  .user-info p {
+    margin: 5px 0 0;
+    color: #666;
+    text-align: center;
+  }
+  
+  .avatar {
+    width: 100%; /* Ensure avatars take full width of user-info div */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Rounded avatar */
+  }
+  

@@ -5,8 +5,9 @@
     justify-content: center;
     align-items: flex-start; /* Align items to the top */
     height: 300px; /* Fixed height */
-    width: 100%; /* Full width */
+    width: 85%; /* Full width */
     padding: 20px;
+    margin-bottom: 15px;
   }
   
   .upload-box {
