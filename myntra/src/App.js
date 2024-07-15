@@ -16,6 +16,7 @@ import MainPage from './components/myntra_page/MainPage';
 const App = () => {
   return (
     <>
+     <div style={{ zoom: 0.5 }}>
     <TopNav />
     <Routes>
     <Route path="/" element={<MyntraPage />} /> 
@@ -64,6 +65,7 @@ const App = () => {
         <Route path="/user/:userId" element={<Profile />} />
 
     </Routes>
+    </div>
   </>
   );
 };

@@ -15,12 +15,12 @@ import { Link } from 'react-router-dom';
 const Post = ({ id, category, image }) => {
   return (
     <Link to={`/post/${id}`} style={{ textDecoration: 'none' }}>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'space-between', marginLeft: 10, marginRight: 10 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))', gap: '50px', marginLeft: 10, marginRight: 10 }}>
         <Card
           variant="outlined"
           sx={{
-            width: '100%', // Adjusted width to fit 4 cards per row (25% of the container width minus gap)
-            height: 'auto', // Automatically adjust height to maintain ratio
+            width: '100%', // Adjusted width to fit the grid column
+            height: '100%', // Automatically adjust height to maintain ratio
             '--Card-radius': (theme) => theme.vars.radius.xs,
           }}
           className="card"
@@ -36,7 +36,7 @@ const Post = ({ id, category, image }) => {
             </Box>
           </CardContent>
           <CardOverflow>
-            <AspectRatio ratio="4/3">
+            <AspectRatio ratio="2/2">
               <img src={image} alt={category} loading="lazy" />
             </AspectRatio>
           </CardOverflow>
@@ -62,9 +62,5 @@ const Post = ({ id, category, image }) => {
     </Link>
   );
 }
-
-  
-
-
 
 export default Post;

@@ -1,7 +1,6 @@
-/* styles.css */
 .main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust minmax values as needed */
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Adjust minmax to 500px */
   gap: 20px;
   justify-items: center;
   padding: 20px;
@@ -9,16 +8,18 @@
 
 .card {
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 15px; /* Add border radius here */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 345px; /* Ensure all cards have the same width */
+  width: 500px; /* Ensure all cards have the same width */
   margin: 10px;
 }
 
 .card img {
   width: 100%;
   height: auto;
+  border-top-left-radius: 15px; /* Match border radius */
+  border-top-right-radius: 15px; /* Match border radius */
 }
 
 .card-content {
