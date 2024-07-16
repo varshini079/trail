@@ -1,7 +1,3 @@
-Here's the complete README file including the provided content and the details about the API endpoints and backend structure:
-
----
-
 # Style Buddies - Myntra Hackathon Project
 
 ## Project Overview
@@ -22,33 +18,38 @@ Welcome to the Style Buddies project! This project was created for a hackathon w
 ### Leaderboard
 - Displays top users and top curations.
 
-## Setup Instructions
 
-Follow these steps to set up and run the project locally:
+## Backend Integration
 
-1. **Clone the repository:**
+### Firestore
 
-    ```bash
-    git clone https://github.com/varshini079/trail.git
-    ```
+The project uses Firestore as the primary database for storing user data, posts, likes, rewards, and leaderboard information. Firestore is a flexible, scalable database for mobile, web, and server development.
 
-2. **Install dependencies:**
+#### Firestore Structure
 
-    Make sure you have [Node.js](https://nodejs.org/) installed. Then, install the necessary dependencies using npm:
+- **Users Collection:**
+  - Each document represents a user.
+  - Fields: `name`, `email`, `profileImage`, `bodyType`, etc.
 
-    ```bash
-    npm install
-    ```
+- **StyleBuddies Collection:**
+  - Each document represents a style buddy post.
+  - Fields: `userId`, `imageUrl`, `productLinks`, `description`, `bodyType`, etc.
 
-3. **Start the development server:**
+- **Posts Collection:**
+  - Each document represents a post.
+  - Fields: `userId`, `content`, `timestamp`, `likes`, etc.
 
-    ```bash
-    npm start
-    ```
+- **Likes Collection:**
+  - Each document represents a like.
+  - Fields: `userId`, `postId`, `timestamp`, etc.
 
-4. **Open the application:**
+- **Rewards Collection:**
+  - Each document represents a reward.
+  - Fields: `userId`, `rewardDetails`, `timestamp`, etc.
 
-    Open your browser and navigate to `http://localhost:3000` to view the application.
+- **Leaderboard Collection:**
+  - Each document represents a leaderboard entry.
+  - Fields: `userId`, `points`, `rank`, etc.
 
 ## API Endpoints
 
@@ -100,6 +101,34 @@ The backend for the StyleBuddies project is built using Node.js and Express.js. 
 - `PUT /:uid` - Update a leaderboard entry by its UID
 - `DELETE /:uid` - Delete a leaderboard entry by its UID
 
+- ## Setup Instructions
+
+Follow these steps to set up and run the project locally:
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/varshini079/trail.git
+    ```
+
+2. **Install dependencies:**
+
+    Make sure you have [Node.js](https://nodejs.org/) installed. Then, install the necessary dependencies using npm:
+
+    ```bash
+    npm install
+    ```
+
+3. **Start the development server:**
+
+    ```bash
+    npm start
+    ```
+
+4. **Open the application:**
+
+    Open your browser and navigate to `http://localhost:3000` to view the application.
+
 ## Usage
 
 - **Home Page**: Start exploring the platform.
@@ -129,6 +158,3 @@ This project leverages a variety of modern web development technologies:
 
 This project is licensed under the MIT License.
 
----
-
-Feel free to customize any sections as needed.
