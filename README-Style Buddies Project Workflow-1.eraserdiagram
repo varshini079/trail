@@ -1,0 +1,100 @@
+flowchart-diagram
+
+title Style Buddies Project Workflow
+
+// Define groups for different phases
+Planning [color: lightblue, icon: calendar] {
+  Define Requirements
+  Create Project Plan
+  Set Milestones
+}
+
+Frontend Development [color: lightgreen, icon: code] {
+  Setup React Project
+  Design UI with Material-UI
+  Implement User Connections
+  Implement Photo Sharing
+  Implement Collections
+  Implement Real-time Communication
+  Implement Notifications
+  Implement User Profiles
+  Optimize User Experience
+}
+
+Backend Development [color: lightcoral, icon: server] {
+  Setup Node.js Server
+  Setup Firebase Firestore
+  Setup Firebase Realtime Database
+  Implement User Connections API
+  Implement Photo Sharing API
+  Implement Collections API
+  Implement Real-time Communication with Socket.IO
+  Implement Notifications with Firebase Cloud Messaging
+  Implement User Profiles API
+  Integrate GraphQL
+  Optimize Performance
+}
+
+Content Moderation [color: lightyellow, icon: shield] {
+  Integrate GPT-4 API
+  Implement Automated Moderation
+  Test Moderation System
+}
+
+Testing [color: lightpurple, icon: check-circle] {
+  Unit Testing
+  Integration Testing
+  User Acceptance Testing
+  Performance Testing
+}
+
+Deployment [color: lightgray, icon: cloud-upload] {
+  Setup CI/CD Pipeline
+  Deploy to Production
+  Monitor and Maintain
+}
+
+// Define connections between nodes
+Start [shape: oval, icon: play] > Define Requirements
+Define Requirements > Create Project Plan
+Create Project Plan > Set Milestones
+
+Set Milestones > Setup React Project
+Setup React Project > Design UI with Material-UI
+Design UI with Material-UI > Implement User Connections
+Implement User Connections > Implement Photo Sharing
+Implement Photo Sharing > Implement Collections
+Implement Collections > Implement Real-time Communication
+Implement Real-time Communication > Implement Notifications
+Implement Notifications > Implement User Profiles
+Implement User Profiles > Optimize User Experience
+
+Set Milestones > Setup Node.js Server
+Setup Node.js Server > Setup Firebase Firestore
+Setup Firebase Firestore > Setup Firebase Realtime Database
+Setup Firebase Realtime Database > Implement User Connections API
+Implement User Connections API > Implement Photo Sharing API
+Implement Photo Sharing API > Implement Collections API
+Implement Collections API > Implement Real-time Communication with Socket.IO
+Implement Real-time Communication with Socket.IO > Implement Notifications with Firebase Cloud Messaging
+Implement Notifications with Firebase Cloud Messaging > Implement User Profiles API
+Implement User Profiles API > Integrate GraphQL
+Integrate GraphQL > Optimize Performance
+
+Set Milestones > Integrate GPT-4 API
+Integrate GPT-4 API > Implement Automated Moderation
+Implement Automated Moderation > Test Moderation System
+
+Optimize User Experience > Unit Testing
+Optimize Performance > Unit Testing
+Test Moderation System > Unit Testing
+
+Unit Testing > Integration Testing
+Integration Testing > User Acceptance Testing
+User Acceptance Testing > Performance Testing
+
+Performance Testing > Setup CI/CD Pipeline
+Setup CI/CD Pipeline > Deploy to Production
+Deploy to Production > Monitor and Maintain
+
+
