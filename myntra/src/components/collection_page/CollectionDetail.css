@@ -1,0 +1,62 @@
+.collection-detail-container {
+  padding: 20px;
+  text-align: center; /* Center-align the content */
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px; /* Increase the size of the profile image */
+  height: 150px; /* Ensure the profile image is square */
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px; /* Adjust font size of the title */
+  margin: 0;
+}
+
+.images-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+  gap: 40px; /* Space between images */
+}
+
+.image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.collection-image {
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+  object-fit: cover; /* Cover the entire area while maintaining aspect ratio */
+  border-bottom: 1px solid #ddd;
+}
+
+.add-to-cart-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}

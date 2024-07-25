@@ -1,0 +1,55 @@
+.top-collections-container {
+  padding: 20px;
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center; /* Center the header */
+}
+
+.collection-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust for responsive columns */
+    gap: 10px;
+    justify-items: start; /* Ensure the items start from the left */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+
+.collection-box {
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 10px;
+  display: block;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.collection-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-right: 16px;
+}
+
+.collection-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.collection-images {
+  width: 100%;
+  height: auto;
+}
