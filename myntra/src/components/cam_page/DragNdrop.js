@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { AiOutlineCheckCircle, AiOutlineCloudUpload } from "react-icons/ai";
+import { AiOutlineCheckCircle, AiOutlineCamera } from "react-icons/ai";
 import { MdClear } from "react-icons/md";
 import "./drag-drop.css";
 
@@ -11,16 +11,6 @@ const DragNdrop = ({ onFilesSelected, width, height, imageWidth, imageHeight }) 
     const selectedFiles = event.target.files;
     if (selectedFiles && selectedFiles.length > 0) {
       const newFiles = Array.from(selectedFiles);
-      setFiles((prevFiles) => [...prevFiles, ...newFiles]);
-      generatePreviews(newFiles);
-    }
-  };
-
-  const handleDrop = (event) => {
-    event.preventDefault();
-    const droppedFiles = event.dataTransfer.files;
-    if (droppedFiles.length > 0) {
-      const newFiles = Array.from(droppedFiles);
       setFiles((prevFiles) => [...prevFiles, ...newFiles]);
       generatePreviews(newFiles);
     }
@@ -57,33 +47,19 @@ const DragNdrop = ({ onFilesSelected, width, height, imageWidth, imageHeight }) 
 
   return (
     <section className="drag-drop">
-      <div
-        className={`upload-box ${
-          files.length > 0 ? "active" : ""
-        }`}
-        onDrop={handleDrop}
-        onDragOver={(event) => event.preventDefault()}
-      >
-        <div className="upload-info">
-          <AiOutlineCloudUpload />
-          <div>
-          <p>Drag and drop your files here</p>
-          <p>Limit 15MB per file. Supported files: .JPG, .JPEG, .PNG</p>
-
-          </div>
+      <div className="upload-box">
+        <div className="upload-info" onClick={() => document.getElementById('file-input').click()}>
+          <AiOutlineCamera style={{ fontSize: '48px' }} />
+          
         </div>
         <input
           type="file"
           hidden
-          id="browse"
+          id="file-input"
           onChange={handleFileChange}
           accept=".pdf,.docx,.pptx,.txt,.xlsx,image/*"
           multiple
         />
-        <label htmlFor="browse" className="browse-btn">
-          Browse files
-        </label>
-
         {files.length > 0 && (
           <div className="file-list">
             <div className="file-list__container">
@@ -109,7 +85,6 @@ const DragNdrop = ({ onFilesSelected, width, height, imageWidth, imageHeight }) 
             </div>
           </div>
         )}
-
         {files.length > 0 && (
           <div className="success-file">
             <AiOutlineCheckCircle style={{ color: "#6DC24B", marginRight: 1 }} />
